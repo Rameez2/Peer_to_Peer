@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+ 
+    <div class="activearea">
+
+<form onsubmit="return enterName()">
+    <input type="text" id="name" required>
+</form>
+
+<ul id="active_users">
+
+</ul>
+
+</div>
+
+
+<div class="mgsarea">
+<div class="messagebox">
+<ul id="messages" class="msglist">
+  
+  
+</ul>
+</div>
+
+<form onsubmit="return sendMessage()">
+    <textarea id="message" placeholder="Enter A Message"></textarea>
+</form><button type="submit" onclick="return sendMessage()">Send</button>
+</div>
+
+
+
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+</html>
